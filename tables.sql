@@ -1,6 +1,5 @@
 CREATE TABLE users
-(id int(10) PRIMARY KEY AUTO_INCREMENT,
-title VARCHAR(100), 
+(id int(10) PRIMARY KEY AUTO_INCREMENT, 
 name VARCHAR(100),
 surname VARCHAR(100),
 patronymic VARCHAR(100),
