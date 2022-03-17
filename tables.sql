@@ -3,7 +3,7 @@ CREATE TABLE users
 name VARCHAR(100),
 surname VARCHAR(100),
 patronymic VARCHAR(100),
-birth_day DATETIME);
+birth_day DATE);
 
 CREATE TABLE categories 
 (id INT(10) PRIMARY KEY AUTO_INCREMENT,
@@ -22,5 +22,5 @@ name VARCHAR(100));
 CREATE TABLE tasks
 (id int(10) PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(100),
-date_start DATETIME,
-date_end DATETIME);
+date_start DATE,
+date_end DATE);
