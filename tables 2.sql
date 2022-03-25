@@ -1,7 +1,3 @@
-ALTER TABLE users ADD new_streat VARCHAR(50) DEFAULT ''; 
-
-ALTER TABLE users DROP COLUMN new_post;
-
 ALTER TABLE users ALTER COLUMN city SET DEFAULT 'Tomsk'; 
 ALTER TABLE users ALTER COLUMN region SET DEFAULT 'Tomsk region';
 
