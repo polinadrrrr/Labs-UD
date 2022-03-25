@@ -1,9 +1,9 @@
 ALTER TABLE users ADD email VARCHAR(100) UNIQUE;
-ALTER TABLE users ADD gender VARCHAR(10) UNIQUE;
-ALTER TABLE users ADD company VARCHAR(100) UNIQUE;
-ALTER TABLE users ADD post VARCHAR(100) UNIQUE;
+ALTER TABLE users ADD gender VARCHAR(10);
+ALTER TABLE users ADD company VARCHAR(100);
+ALTER TABLE users ADD post VARCHAR(100);
 ALTER TABLE users ADD address VARCHAR(100) UNIQUE;
-ALTER TABLE users ADD city VARCHAR(50) UNIQUE;
+ALTER TABLE users ADD city VARCHAR(50);
 ALTER TABLE users ADD telephone VARCHAR(20) UNIQUE;
 
 INSERT INTO `users` (`name`, `surname`, `patronymic`, `birth_day`, `email`) VALUES 
