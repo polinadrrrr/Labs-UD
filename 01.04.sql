@@ -42,6 +42,10 @@ UPDATE users SET age = 43 WHERE id in(12);
 UPDATE users SET age = 72 WHERE id in(14);
 UPDATE users SET age = 62 WHERE id in(15);
 
+SELECT name, surname, age AS senior FROM users WHERE age = (SELECT MAX(age) FROM users);
+SELECT name, surname, age AS junior FROM users WHERE age = (SELECT MIN(age) FROM users);
+SELECT AVG(age) AS average_age FROM users;
+
 SELECT AVG(age) AS average_age, MAX(age) AS senior, MIN(age) AS junior 
 FROM users WHERE city = 1;
 SELECT AVG(age) AS average_age, MAX(age) AS senior, MIN(age) AS junior 
