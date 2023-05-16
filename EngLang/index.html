@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EngLang</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header class="header">
+		<!-- Logo -->
+		<a href="index.html" class="logo">EngLang</a>
+		<!-- Hamburger icon -->
+		<input class="side-menu" type="checkbox" id="side-menu"/>
+		<label class="hamb" for="side-menu">
+			<span class="hamb-line"></span>
+		</label>
+		<!-- Menu -->
+		<nav class="nav">
+			<ul class="menu">
+				<li><a href="lessons.html">Уроки</a></li>
+				<li><a href="textbooks.html">Учебники</a> </li>
+				<li><a href="tests.html">Задания</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Main content -->
+	<main>		
+		<section>
+			<h1>Изучать английский просто!</h1>
+			<p>EngLang позволит поднять английский на нормальный уровень. Уже через месяц вы сможете с легкостью выражать свои мысли, понимать собеседников, смотреть и понимать фильмы в оригинале, youtube, зарубежные форумы, переводить и понимать текст песен.</p>
+		</section>
+		<section>
+			<h1>Составьте свой собственный план обучения</h1>
+			<form>
+				<div>
+					<label for="select-your-lvl">Выберите имеющийся уровень знаний</label>
+					<select name="select-your-lvl" id="select-your-lvl">
+						<option value="0" selected="selected" id="select-your-lvl-0">0</option>
+						<option value="70" id="select-your-lvl-1">A1</option>
+						<option value="220" id="select-your-lvl-2">A2</option>
+						<option value="520" id="select-your-lvl-3">B1</option>
+						<option value="720" id="select-your-lvl-4">B2</option>
+						<option value="920" id="select-your-lvl-5">C1</option>
+						<option value="1120" id="select-your-lvl-6">C2</option>
+					</select>
+				</div>
+				<div>
+					<label for="select-wanted-lvl">Выберите желаемый уровень знаний</label>
+					<select name="select-wanted-lvl" id="select-wanted-lvl">
+						<option value="0" id="select-wanted-lvl-0">0</option>
+						<option value="70" id="select-wanted-lvl-1">A1</option>
+						<option value="220" id="select-wanted-lvl-2">A2</option>
+						<option value="520" id="select-wanted-lvl-3">B1</option>
+						<option value="720" id="select-wanted-lvl-4">B2</option>
+						<option value="920" id="select-wanted-lvl-5">C1</option>
+						<option value="1120" selected="selected" id="select-wanted-lvl-6">C2</option>
+					</select>
+				</div>
+				<div>
+					<label for="text-time">Введите часы занятий в неделю</label>
+					<input type="text" name="text-time" maxlength="2" id="text-time">
+				</div>
+				<div><p id="result"></p></div>
+				<div>
+					<button type="button" class="btn signin" name="button-calk" style="default" id="button-calk" onclick="calculateTime()">Расчитать</button>
+				</div>
+			</form>
+		</section>
+		<section>
+			<h1>Начните разбираться прямо сейчас</h1>
+			<section>
+			<ul class="dbl-border">
+				<li><a href="lessons.html#noun">Существительные - Nouns</a></li>
+				<li><a href="lessons.html#article">Артикли - Articles</a></li>
+				<!-- данке --><li><a href="lessons.html#pronoun">Местоимения - Pronouns</a></li>
+				<!-- данке --><li><a href="lessons.html#adjective">Прилагательные - Adjectives</a></li>
+				<!-- данке --><li><a href="lessons.html#verb">Глаголы - Verbs</a></li>
+				<!-- данке --><li><a href="lessons.html#adverb">Наречия - Adverbs</a></li>
+				<!-- данке --><li><a href="lessons.html#numeral">Числительные - Numerals</a></li>
+				<!-- данке --><li><a href="lessons.html#conjunction">Союзы - Conjunctions</a></li>
+				<!-- данке --><li><a href="lessons.html#preposition">Предлоги - Prepositions</a></li>
+				<!-- данке --><li><a href="lessons.html#inter"> Междометия - Interjections</a></li> 
+			</ul>
+		</section>
+		</section>
+		<section>
+			<h1>Книги в помощь</h1>
+			<p>Вы сможете найти подходящий Вам учебник для облегчения достижения поставленной Вами цели. А также найдёте множество тестов для практики.</p>
+		</section>
+		<section>
+			<h1>Задания</h1>
+			<p>Одной теорией сыт не будешь, поэтому Вы сможете найти множество заданий для проверки знаний!</p>
+		</section>
+	</main>
+</body>
+</html>
